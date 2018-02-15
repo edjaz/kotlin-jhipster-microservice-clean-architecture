@@ -1,0 +1,11 @@
+version: '2'
+services:
+    common-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/common/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=common
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
